@@ -1,0 +1,13 @@
+﻿{
+  "manifest_version": 3,
+  "name": "NeuralReader | Sovereign Core",
+  "version": "3.4",
+  "author": "Joseph Rocco Peransi",
+  "description": "Local-first Audio Interface. Architected by Joseph Rocco Peransi.",
+  "permissions": ["activeTab", "scripting", "tts", "storage", "audioCapture", "contextMenus"],
+  "host_permissions": ["<all_urls>"],
+  "options_ui": { "page": "options.html", "open_in_tab": true },
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "NeuralReader V3.4" },
+  "commands": { "read_selection": { "suggested_key": { "default": "Alt+R" }, "description": "Read selection" } }
+}
