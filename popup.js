@@ -1,8 +1,9 @@
-﻿document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const ui = {
         mic: document.getElementById("btn-mic"),
         read: document.getElementById("btn-read"),
         stop: document.getElementById("btn-stop"),
+        exit: document.getElementById("btn-exit"),
         opt: document.getElementById("btn-opt"),
         txt: document.getElementById("txt"),
         rate: document.getElementById("rate"),
@@ -43,6 +44,7 @@
         if(t) { ui.stat.innerText = "Speaking..."; chrome.runtime.sendMessage({command:"speak", text:t, rate:ui.rate.value, voiceName:ui.voice.value}); }
     };
     ui.stop.onclick = () => { chrome.runtime.sendMessage({command:"stop"}); if(isRec) rec.stop(); ui.stat.innerText = "Stopped"; };
+    ui.exit.onclick = () => { chrome.runtime.sendMessage({command:"stop"}); if(isRec) rec.stop(); ui.stat.innerText = "Closed"; window.close(); };
     ui.opt.onclick = () => chrome.runtime.openOptionsPage();
     ui.rate.oninput = () => chrome.storage.local.set({rate: ui.rate.value});
     ui.voice.onchange = () => chrome.storage.local.set({voiceURI: ui.voice.value});
