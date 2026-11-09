@@ -19,6 +19,10 @@ Highlight any text on a page, press Alt+R or hit READ, and NeuralReader reads it
 - Pop it out — tap ⧉ POP OUT to open NeuralReader in its own window you can drag around, resize, and keep up while you read
 - Remembers your settings — your speed and voice are saved for next time
 
+Price — $2.99 one-time
+
+NeuralReader is $2.99, sold by Joseph Rocco Peransi. Google no longer collects payments in the Chrome Web Store, so you buy through the seller's checkout linked in the store listing. Pay once, get NeuralReader — no subscription, no license key.
+
 Core Features
 
 Dynamic TTS Engine: Leverages chrome.tts for high-fidelity local and network-based voice synthesis.
