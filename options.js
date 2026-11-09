@@ -1,4 +1,7 @@
-﻿document.addEventListener("DOMContentLoaded", async () => {
+// NeuralReader V3.4 | Architect: Joseph Rocco Peransi
+// Copyright (c) 2026 Joseph Rocco Peransi. All rights reserved.
+// Author: Joseph Rocco Peransi | License: GNU GPL v3.0
+document.addEventListener("DOMContentLoaded", async () => {
     const mic = document.getElementById("mic");
     const lang = document.getElementById("lang");
     try { await navigator.mediaDevices.getUserMedia({audio:true}); } catch(e){}
