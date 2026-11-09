@@ -4,6 +4,20 @@ Local-first Audio Interface. Architected by Joseph Rocco Peransi (@X/xAIModerato
 
 NeuralReader is a high-performance Chrome Extension designed for seamless Text-to-Speech (TTS) and Speech-to-Text (STT) interaction. Built with a focus on speed and local execution, it provides a "Sovereign Core" for processing web content into audio and voice into text.
 
+What it does — simple version
+
+Highlight any text on a page, press Alt+R or hit READ, and NeuralReader reads it out loud. That's it — it's already set up, you don't have to juggle a bunch of buttons.
+
+- Reads what you highlight — select text, press Alt+R, or right-click and choose "NeuralReader: Read Selection"
+- Reads what you paste — type or paste text into the box and hit ▶ READ
+- Talk instead of typing — tap the 🎤 mic and speak, your words appear in the box
+- Pick your voice — choose from the voices on your computer, local or online
+- Change the speed — slide it slower or faster, 0.5x to 3.0x
+- Stop anytime — tap ■ to stop reading
+- Close it cleanly — tap ✕ EXIT to stop and close it
+- Pop it out — tap ⧉ POP OUT to open NeuralReader in its own window you can drag around, resize, and keep up while you read
+- Remembers your settings — your speed and voice are saved for next time
+
 Core Features
 
 Dynamic TTS Engine: Leverages chrome.tts for high-fidelity local and network-based voice synthesis.
@@ -22,7 +36,7 @@ Manifest Version: 3
 
 Architect: Joseph Rocco Peransi (@X/xAIModerator)
 
-Permissions: activeTab, scripting, tts, storage, audioCapture, contextMenus
+Permissions: activeTab, scripting, tts, storage, audioCapture, contextMenus, windows
 
 Logic Layers:
 
