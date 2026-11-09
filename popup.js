@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         read: document.getElementById("btn-read"),
         stop: document.getElementById("btn-stop"),
         exit: document.getElementById("btn-exit"),
+        minimize: document.getElementById("btn-minimize"),
         popout: document.getElementById("btn-popout"),
         opt: document.getElementById("btn-opt"),
         txt: document.getElementById("txt"),
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     ui.stop.onclick = () => { chrome.runtime.sendMessage({command:"stop"}); if(isRec) rec.stop(); ui.stat.innerText = "Stopped"; };
     ui.exit.onclick = () => { chrome.runtime.sendMessage({command:"stop"}); if(isRec) rec.stop(); ui.stat.innerText = "Closed"; window.close(); };
+    ui.minimize.onclick = () => { ui.stat.innerText = "Reading in background..."; window.close(); };
     ui.popout.onclick = () => { chrome.windows.create({ url: chrome.runtime.getURL("popup.html"), type: "popup", width: 360, height: 540, focused: true }, () => { window.close(); }); };
     ui.opt.onclick = () => chrome.runtime.openOptionsPage();
     ui.rate.oninput = () => chrome.storage.local.set({rate: ui.rate.value});

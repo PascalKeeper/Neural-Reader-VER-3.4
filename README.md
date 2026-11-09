@@ -14,6 +14,7 @@ Highlight any text on a page, press Alt+R or hit READ, and NeuralReader reads it
 - Pick your voice — choose from the voices on your computer, local or online
 - Change the speed — slide it slower or faster, 0.5x to 3.0x
 - Stop anytime — tap ■ to stop reading
+- Minimize and keep listening — tap — MINIMIZE to close the window, the reading keeps going in the background
 - Close it cleanly — tap ✕ EXIT to stop and close it
 - Pop it out — tap ⧉ POP OUT to open NeuralReader in its own window you can drag around, resize, and keep up while you read
 - Remembers your settings — your speed and voice are saved for next time
